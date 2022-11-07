@@ -5,3 +5,14 @@ https://github.com/binder-examples/multi-language-demo
 https://github.com/binder-examples/r_with_python
 
 https://github.com/fomightez/rayshader-binder/
+
+# Nightly R builds
+https://mran.microsoft.com/documents/rro/reproducibility
+
+# Python/Jupyter
+https://mybinder.org/v2/gh/TESTgroup-BNL/nvbbcc/HEAD
+
+# Rstudio
+http://mybinder.org/v2/gh/TESTgroup-BNL/nvbbcc/main?urlpath=rstudio
+
+https://mybinder.org/v2/gh/fomightez/rayshader-binder/master?urlpath=rstudio
