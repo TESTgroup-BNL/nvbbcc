@@ -1,0 +1,12 @@
+name: uas-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - gdal
+  - earthengine-api
+  - geemap
+  - elevation
+  - pandas
