@@ -9,7 +9,7 @@
 
 #--------------------------------------------------------------------------------------------------#
 #### Load R libraries
-list.of.packages <- c("rgdal", "terra", "sp", "here","RColorBrewer")
+list.of.packages <- c("terra", "sp", "here","RColorBrewer")
 invisible(lapply(list.of.packages, library, character.only = TRUE))
 `%notin%` <- Negate(`%in%`)
 here::here()
@@ -44,8 +44,9 @@ tir_raster_name <- "NGEEArctic_UAS_Kougarok_20180725_Flight6_TIR_cog.tif"
 tir_cog.url <- "/vsicurl/https://storage.googleapis.com/bnl_uas_data/"
 
 # grab some example locations
-example_kg_points <- rgdal::readOGR(file.path(here::here(),
-                                              "shapefiles","ngee"),"kg_example_points")
+#example_kg_points <- rgdal::readOGR(file.path(here::here(),
+#                                              "shapefiles","ngee"),"kg_example_points")
+example_kg_points <- terra::vect(file.path(here::here(),"shapefiles","ngee","kg_example_points.shp"))
 plot(example_kg_points)
 #--------------------------------------------------------------------------------------------------#
 
@@ -111,9 +112,9 @@ dev.off()
 
 
 # extract data
-chm.data <- terra::extract(chm_ras, terra::vect(example_kg_points))
+chm.data <- terra::extract(chm_ras, example_kg_points)
 chm.data[,2] <- chm.data[,2]*0.01
-tir.data <- terra::extract(tir_ras, terra::vect(example_kg_points))
+tir.data <- terra::extract(tir_ras, example_kg_points)
 tir.data[,2] <- tir.data[,2]*0.1
 #--------------------------------------------------------------------------------------------------#
 
