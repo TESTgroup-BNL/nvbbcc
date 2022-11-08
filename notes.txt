@@ -1,3 +1,11 @@
+# Example building a Rocker version
+https://github.com/rocker-org/binder/
+
+# R image info
+https://packagemanager.rstudio.com/client/#/repos/1/packages/A3
+
+https://github.com/karthik/holepunch
+
 https://github.com/binder-examples/r
 https://github.com/binder-examples/r/tree/master/
 
@@ -14,6 +22,9 @@ https://mran.microsoft.com/documents/rro/reproducibility
 https://mybinder.org/v2/gh/TESTgroup-BNL/nvbbcc/HEAD
 
 # Rstudio
-http://mybinder.org/v2/gh/TESTgroup-BNL/nvbbcc/main?urlpath=rstudio
+https://mybinder.org/v2/gh/TESTgroup-BNL/nvbbcc/main?urlpath=rstudio
 
+http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio
+
+https://mybinder.org/v2/gh/matanmazor/asymmetry/master?urlpath=rstudio
 https://mybinder.org/v2/gh/fomightez/rayshader-binder/master?urlpath=rstudio
